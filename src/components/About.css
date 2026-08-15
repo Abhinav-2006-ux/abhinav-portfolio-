@@ -1,16 +1,10 @@
 .section-padding {
-  padding: 5rem 1rem;
+  padding: 4rem 0;
 }
 
 @media (min-width: 768px) {
   .section-padding {
-    padding: 5rem 2.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .section-padding {
-    padding: 5rem 5rem;
+    padding: 5rem 0;
   }
 }
 
