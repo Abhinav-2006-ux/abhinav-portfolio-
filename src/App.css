@@ -1,0 +1,17 @@
+.app-container {
+  display: flex;
+  background-color: var(--color-white);
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    margin-left: 16rem; /* 64 * 0.25rem = 16rem = 256px */
+  }
+}
