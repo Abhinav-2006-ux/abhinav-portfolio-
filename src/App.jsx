@@ -5,7 +5,6 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Resume from './components/Resume';
 import Projects from './components/Projects';
-import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import './App.css';
 
@@ -19,7 +18,6 @@ function App() {
         <Skills />
         <Resume />
         <Projects />
-        <Testimonials />
         <Contact />
       </main>
     </div>

@@ -16,7 +16,6 @@ const Sidebar = () => {
     { name: 'Skills', to: 'skills' },
     { name: 'Resume', to: 'resume' },
     { name: 'Projects', to: 'projects' },
-    { name: 'Testimonials', to: 'testimonials' },
     { name: 'Contact', to: 'contact' }
   ];
 
