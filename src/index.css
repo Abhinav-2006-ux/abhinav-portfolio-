@@ -46,21 +46,25 @@ body {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1; 
+  background: #cbd5e1;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8; 
+  background: #94a3b8;
 }
 
 /* Layout Utilities */
 .container {
   width: 100%;
-  max-width: 64rem; /* Replaced by specific max-widths in components */
+  max-width: 64rem;
+  /* Replaced by specific max-widths in components */
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25rem;
