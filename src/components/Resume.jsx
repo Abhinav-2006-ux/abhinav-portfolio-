@@ -57,10 +57,6 @@ const Resume = () => {
               My professional journey, education, and achievements.
             </p>
           </div>
-          <a href="#" className="resume-download-btn">
-            <Download size={20} />
-            <span>Download Resume</span>
-          </a>
         </motion.div>
 
         <div className="resume-grid">

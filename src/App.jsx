@@ -17,7 +17,6 @@ function App() {
         <About />
         <Skills />
         <Resume />
-        <Projects />
         <Contact />
       </main>
     </div>

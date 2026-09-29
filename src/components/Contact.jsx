@@ -36,11 +36,11 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="contact-grid">
+        <div className="contact-info-centered">
           <motion.div 
             className="contact-info-col"
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
@@ -83,65 +83,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
-
-          <motion.div 
-            className="contact-form-col"
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <form onSubmit={handleSubmit} className="contact-form">
-              <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="name" className="form-label">Name</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    name="name" 
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="form-input"
-                    placeholder="John Doe"
-                  />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="email" className="form-label">Email</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="form-input"
-                    placeholder="john@example.com"
-                  />
-                </div>
-              </div>
-              <div className="form-group">
-                <label htmlFor="message" className="form-label">Message</label>
-                <textarea 
-                  id="message" 
-                  name="message" 
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows="5"
-                  className="form-textarea"
-                  placeholder="Tell me about your project..."
-                ></textarea>
-              </div>
-              <button 
-                type="submit" 
-                className="submit-btn"
-              >
-                Send Message
-                <Send size={18} />
-              </button>
-            </form>
           </motion.div>
         </div>
       </div>
