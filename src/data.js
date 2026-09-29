@@ -24,43 +24,66 @@ I am a quick learner, adaptable, and eager to develop my technical and problem-s
 };
 
 export const skillsData = [
-  { category: "Frontend", name: "HTML", level: 90 },
-  { category: "Programming", name: "C", level: 85 },
-  { category: "Programming", name: "Java", level: 80 },
-  { category: "Programming", name: "Python", level: 75 },
+  {
+    category: "Web Development",
+    skills: ["HTML", "CSS", "JavaScript", "React.js", "Bootstrap", "Tailwind CSS"]
+  },
+  {
+    category: "Programming Languages",
+    skills: ["C", "C++", "Java", "Python"]
+  },
+  {
+    category: "Database",
+    skills: ["MySQL", "MongoDB"]
+  },
+  {
+    category: "Tools & Technologies",
+    skills: ["Git", "GitHub", "VS Code", "REST APIs", "Firebase"]
+  },
+  {
+    category: "Core Computer Science",
+    skills: ["Data Structures & Algorithms", "Object-Oriented Programming (OOP)", "DBMS", "Computer Networks", "Operating Systems"]
+  }
 ];
 
 export const experienceData = [
   {
-    type: "experience", // 'experience' or 'education'
-    title: "Senior Frontend Developer",
-    organization: "Tech Innovators Inc.",
-    date: "2021 - Present",
+    type: "experience",
+    title: "Web Developer Intern",
+    organization: "CEHRO India NGO",
+    date: "25 May 2026 - 25 July 2026",
     bullets: [
-      "Led the development of the core product dashboard using React and Tailwind CSS.",
-      "Improved application performance by 30% through code splitting and lazy loading.",
-      "Mentored junior developers and conducted code reviews."
+      "Completed a 2-month internship as a Web Developer.",
+      "Worked on website development and frontend-related tasks."
     ]
   },
   {
     type: "experience",
-    title: "Web Developer",
-    organization: "Creative Digital Agency",
-    date: "2018 - 2021",
+    title: "Participant",
+    organization: "Smart India Hackathon (SIH)",
+    date: "2025 - 2026",
     bullets: [
-      "Built responsive websites for diverse clients.",
-      "Implemented accessibility best practices achieving WCAG AA compliance.",
-      "Integrated RESTful APIs and third-party services."
+      "Participated in the Smart India Hackathon in 2025 and 2026."
+    ]
+  },
+  {
+    type: "experience",
+    title: "Participant",
+    organization: "IILM Gurugram Internal Hackathon",
+    date: "Recent",
+    bullets: [
+      "Participated in the internal hackathon of IILM Gurugram."
     ]
   },
   {
     type: "education",
-    title: "B.S. in Computer Science",
-    organization: "University of Technology",
-    date: "2014 - 2018",
+    title: "B.Tech in Computer Science and Engineering",
+    organization: "IILM University, Gurugram",
+    date: "2024 - Present",
     bullets: [
-      "Graduated with Honors.",
-      "Relevant coursework: Data Structures, Web Development, UI/UX Design."
+      "Currently pursuing B.Tech in Computer Science and Engineering.",
+      "Second-year student.",
+      "Learning programming and web development."
     ]
   }
 ];

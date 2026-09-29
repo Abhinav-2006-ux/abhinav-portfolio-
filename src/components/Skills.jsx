@@ -24,27 +24,22 @@ const Skills = () => {
         </motion.div>
 
         <div className="skills-grid">
-          {skillsData.map((skill, index) => (
+          {skillsData.map((categoryGroup, index) => (
             <motion.div 
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="skill-item"
+              className="skill-category-card"
             >
-              <div className="skill-header">
-                <span className="skill-name">{skill.name}</span>
-                <span className="skill-level-text">{skill.level}%</span>
-              </div>
-              <div className="skill-bar-bg">
-                <motion.div 
-                  className="skill-bar-fill"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${skill.level}%` }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 1, delay: 0.3 }}
-                />
+              <h3 className="skill-category-title">{categoryGroup.category}</h3>
+              <div className="skill-badges">
+                {categoryGroup.skills.map((skill, skillIndex) => (
+                  <span key={skillIndex} className="skill-badge">
+                    {skill}
+                  </span>
+                ))}
               </div>
             </motion.div>
           ))}
